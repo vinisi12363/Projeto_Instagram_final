@@ -1,0 +1,739 @@
+* {
+  box-sizing: border-box;
+  font-family: "Roboto";
+}
+body {
+  background-color: #fafafa;
+  height: 2000px;
+  font-family: "Roboto";
+}
+#main {
+  width: 100%;
+  height: 100%;
+
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background-color: #fafafa;
+}
+.navBar_tablet {
+  background-color: white;
+  display: none;
+}
+
+.navBar_mobile {
+  background-color: white;
+
+  display: none;
+}
+.div-footmenu {
+  display: none;
+}
+.navBar {
+  position: fixed;
+  display: initial;
+  display: flex;
+  justify-content: center;
+  top: 0px;
+  background-color: white;
+  width: 935px;
+  height: 54px;
+  z-index: 1;
+  border-bottom: 1px solid #dbdbdb;
+}
+.insta_logo {
+  width: 103px;
+  height: 29px;
+}
+.navBar ion-icon {
+  width: 17.87px;
+  height: 17.87px;
+}
+.div-logoInsta {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 20px;
+  background-color: white;
+  position: absolute;
+  top: 15px;
+  bottom: 10px;
+  left: 1px;
+}
+.div-logoInsta ion-icon {
+  width: 18px;
+  height: 18px;
+}
+.div-centerLogoInsta {
+  width: 1px;
+  height: 22px;
+  padding-left: 3px;
+  padding-right: 3px;
+  background-color: #fafafa;
+}
+.divPesquisar {
+  position: absolute;
+  top: 13px;
+  left: 42%;
+  background-color: #e5e5e5;
+  border: solid 1px #dbdbdd;
+  border-radius: 3px;
+  width: 215px;
+  height: 28px;
+}
+#txtBusca {
+  align-items: center;
+  text-align: center;
+  background-color: transparent;
+  padding-right: 15px;
+  font-style: normal;
+  font-family: "Roboto";
+  font-size: 12px;
+  border: none;
+  height: 28px;
+  width: 215px;
+}
+.right-icons {
+  position: absolute;
+  top: 15px;
+  bottom: 10px;
+  right: 1px;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+ion-icon {
+  /*justificando todos os ion icon de forma padrão.*/
+  justify-content: space-between;
+  width: 22px;
+  height: 22px;
+}
+/*fim das edições da div nav bar*/
+/*aqui pra frente é só edição do container master e os demais.*/
+.container-master {
+  display: flex;
+  flex-direction: row;
+  width: 935px;
+  position: relative;
+  top: 250px;
+  background-color: #fafafa;
+  justify-content: center;
+}
+.container-left {
+  display: flex;
+  flex-direction: column;
+  padding-left: 1px;
+  margin-top: 88px;
+  background-color: #fafafa;
+  width: 614px;
+}
+.container-right {
+  display: flex;
+  width: 300px;
+  margin-top: 88px;
+  flex-direction: column;
+  background-color: #fafafa;
+}
+.container-center {
+  margin-top: 88px;
+  width: 20px;
+  background-color: #fafafa;
+}
+.post_video {
+  display: flex;
+  flex-direction: column;
+  border-radius: 3px;
+  width: 614px;
+  margin-top: 30px;
+  justify-content: center;
+}
+.div-headerPost {
+  width: 614px;
+}
+.post_video {
+  background-color: white;
+}
+.img-headerPost {
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+}
+.post_video {
+  background-color: white;
+}
+.videoPost {
+  width: 614px;
+  height: 614px;
+}
+
+.stories {
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 14px;
+  overflow: auto;
+  scroll-behavior: smooth;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  top: 0px;
+  right: 300px;
+  overflow: hidden;
+  width: 614px;
+  height: 118px;
+  margin-left: 300px;
+  border-radius: 3px;
+  background-color: white;
+  z-index: 0;
+  border: 1px solid #dbdbdb;
+}
+
+.div-storieButtom {
+  position: absolute;
+  top: 33px;
+  right: 6px;
+  z-index: 1;
+  box-sizing: border-box;
+}
+#storie-buttom {
+  box-sizing: border-box;
+  width: 26px;
+  height: 26px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.p-stories {
+  /* essa parte aqui não está funcionando pintei de azul só pra visualizar*/
+  position: relative;
+  top: 8px;
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14.06px;
+  text-align: center;
+  max-width: 78px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  /* essa parte aqui não está funcionando pintei de azul só pra visualizar*/
+}
+
+.div_p-docabrunco {
+  height: 19px;
+}
+.div-storieIcons {
+  background-color: white;
+}
+.stories img {
+  width: 56px;
+  height: 56px;
+  padding: 4px;
+  margin-right: 10px;
+  position: relative;
+  top: 10px;
+  left: 6px;
+}
+
+.div-storieIcons {
+  height: 66px;
+  width: 66px;
+  margin-left: 15px;
+  margin-bottom: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  background-image: url("imagens/stories_background 1.png");
+  background-position: center;
+}
+.div-storieIcons img {
+  position: relative;
+  top: 0px; /* centralizando a img dentro da div de forma direta.*/
+  left: 5px;
+  height: 66px;
+  width: 66px; /*  tive que setar a como 66X66 porque quando estava com 56X56 ele estava redimensionando e estava ficando pequena demais a img.*/
+}
+.post {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  border-radius: 3px;
+  width: 614px;
+  box-sizing: border-box;
+  margin-top: 24px;
+  justify-content: center;
+  border: 1px solid #dbdbdb;
+}
+
+.div-headerPost {
+  width: 614px;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+}
+.img-headerPost {
+  position: relative;
+  top: 12px;
+  left: 10px;
+}
+#ion-iconPostHeader {
+  position: relative;
+  top: 23px;
+  left: 500px;
+  width: 16px;
+  height: 16px;
+}
+
+.post_video #ion-iconPostHeader {
+  position: relative;
+  top: 23px;
+  left: 443px;
+  width: 16px;
+  height: 16px;
+}
+.div-commentPost {
+  display: flex;
+  width: 614px;
+  flex-direction: row;
+  height: 76px;
+  background-color: white;
+}
+.post .p-headerPost {
+  position: relative;
+  top: 21px;
+  left: 20px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+}
+.post_video .p-headerPost {
+  position: relative;
+  top: 21px;
+  left: 20px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+}
+.post .img-headerPost {
+  object-fit: cover;
+  width: 36px;
+  height: 36px;
+}
+.post .photoPost {
+  width: 614px;
+  object-fit: cover;
+  height: 614px;
+}
+.post {
+  width: 612px;
+  height: 749px;
+}
+
+.div-commentPostIcons {
+  position: relative;
+  top: 12px;
+  left: 10px;
+  height: 18px;
+  display: flex;
+  flex-direction: row;
+  width: 96px;
+  justify-content: space-between;
+  background-color: white;
+}
+.div-commentSaveIcon {
+  background-color: white;
+  height: 18px;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  left: 475px;
+  top: 12px;
+}
+.img-comment {
+  height: 20px;
+  widows: 20px;
+}
+.div-commentPostInfo .img-comment {
+  position: relative;
+  top: 0px;
+  right: 15px;
+}
+
+.div-commentPostInfo {
+  display: flex;
+  background-color: white;
+  position: relative;
+  height: 21px;
+  top: 40px;
+  right: 90px;
+}
+.sidebar {
+  position: relative;
+  top: 0px;
+  right: 0px;
+  width: 293px;
+  background-color: #fafafa;
+}
+
+.div-perfil {
+  display: flex;
+  flex-direction: row;
+  background-color: #fafafa;
+  padding: 15px;
+}
+.div-perfil img {
+  position: relative;
+  top: 0px;
+  right: 15px;
+  height: 56px;
+  width: 56px;
+  border-radius: 50%;
+}
+.div-pPerfil {
+  position: absolute;
+  top: 25px;
+  left: 90px;
+}
+.div-sugestions {
+  position: absolute;
+  top: 90px;
+}
+.p-perfil {
+  position: relative;
+  right: 20px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  display: flex;
+
+  color: #262626;
+}
+.p-perfil1 {
+  position: relative;
+  right: 20px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  display: flex;
+  color: #8e8e8e;
+}
+.sugestionBottom {
+  position: relative;
+  top: 15px;
+  left: 2px;
+  margin-top: 15px;
+}
+.p-sugestions {
+  font-family: "Roboto";
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+  color: #8e8e8e;
+}
+.p-verTudo {
+  position: absolute;
+  top: 88px;
+  left: 260px;
+  font-family: "Roboto";
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+  color: #262626;
+  width: 55px;
+}
+
+.div-rightBottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.sugestionBottom {
+  display: flex;
+  flex-direction: row;
+  background-color: #fafafa;
+  margin-bottom: 0px;
+}
+.sugestionBottom img {
+  height: 32px;
+  width: 32px;
+}
+
+.p-sugestionsBottom {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+}
+.p-segueVc1 {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #8e8e8e;
+}
+.p-segueVc2 {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #8e8e8e;
+}
+.p-segueVc3 {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #8e8e8e;
+}
+.p-segueVc4 {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #8e8e8e;
+}
+.p-segueVc5 {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #8e8e8e;
+}
+
+.p-seguir {
+  position: relative;
+  bottom: 15px;
+  left: 260px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  display: flex;
+  align-items: center;
+  text-align: right;
+  color: #139ef2;
+}
+.div_sugestion {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  left: 10px;
+  background-color: #fafafa;
+}
+.pageInfoBottom {
+  position: relative;
+  top: 10px;
+}
+.p-infoBottom {
+  text-align: justify;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 13px;
+  color: #c7c7c7;
+}
+.p-infofacebook {
+  position: relative;
+  top: 20px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 13px;
+  color: #c7c7c7;
+}
+
+/* estilizando com hover */
+
+.div-storieButtom:hover {
+  cursor: pointer;
+}
+.div-storieIcons:hover {
+  cursor: pointer;
+}
+.div-logoInsta:hover {
+  cursor: pointer;
+}
+.right-icons:hover {
+  cursor: pointer;
+}
+.ion-iconPostHeader .ionicon s-ion-icon:hover {
+  cursor: pointer;
+  color: #dbdbdb;
+}
+.p-headerPost:hover {
+  cursor: pointer;
+  color: #dbdbdb;
+}
+
+.div_sugestion:hover {
+  cursor: pointer;
+}
+.p-seguir:hover {
+  cursor: pointer;
+}
+.sugestionBottomImg:hover {
+  cursor: pointer;
+}
+.div-pPerfil:hover {
+  cursor: pointer;
+}
+.perfilImg:hover {
+  cursor: pointer;
+}
+
+/* construindo a parte responsiva.*/
+
+@media (max-width: 935px) {
+  .container-center {
+    display: none;
+  }
+  body {
+    margin-left: 10px;
+  }
+  .navBar {
+    display: none;
+  }
+  .navBar_tablet {
+    position: fixed;
+    display: initial;
+    display: flex;
+    justify-content: center;
+    top: 0px;
+    background-color: white;
+    width: 900px;
+    height: 54px;
+    z-index: 1;
+    border-bottom: 1px solid #dbdbdb;
+  }
+  .container-right {
+    display: none;
+  }
+  .div-logoInsta {
+    left: 10px;
+  }
+  .right-icons {
+    right: 25px;
+  }
+  .divPesquisar {
+    left: 35%;
+  }
+} /* fim da @media para tablet*/
+
+@media (max-width: 614px) {
+  #menu {
+    /* setando o painel main como column , pois por padrão estava em row*/
+    display: flex;
+    flex-direction: column;
+    margin-left: none;
+    padding-left: none;
+    width: 612px;
+    margin: auto;
+  }
+  body {
+    width: 612px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-left: 0px;
+    padding-left: 0px;
+    margin-right: 0px;
+    padding-right: 0px;
+  }
+  .navBar {
+    display: none;
+  }
+  .navBar_tablet {
+    background-color: white;
+    display: none;
+  }
+  .navBar_mobile {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    height: 54px;
+    background-color: #ffffff;
+    width: 612px;
+    z-index: 1;
+  }
+
+  .navBar_mobile .insta_logo {
+    position: absolute;
+    top: 13px;
+    left: 41.5%;
+    /*CENTRALIZANDO O LOGO DO INSTA NA VERSÃO CELULAR.
+    */
+  }
+  .stories {
+    background-color: #fafafa;
+    border: none;
+    width: 612px;
+    margin-top: 20px;
+  }
+  .div-storieIcons {
+    background-color: #fafafa;
+  }
+  #storie-buttom {
+    display: none;
+  }
+  .container-master {
+    justify-content: center;
+    align-items: center;
+    width: 612px;
+    position: relative;
+    bottom: 15px;
+  }
+  .container-left {
+    width: 612px;
+    display: flex;
+  }
+
+  .container-center {
+    display: none;
+  }
+  .container-right {
+    display: none;
+  }
+
+  .photoPost img {
+    height: 612px;
+    width: 612px;
+  }
+
+  .post .div-headerPost .div-photoPost .div-commentPost {
+    width: 612px;
+  }
+  .navBar_mobile .div-centerLogoInsta {
+    display: none;
+  }
+
+  .div-logoInsta {
+    left: 10px;
+  }
+  .right-icons {
+    right: 10px;
+  }
+  .divPesquisar {
+    left: 35%;
+  }
+
+  .div-footmenu {
+    background-color: #ffffff;
+    display: flex;
+    margin-left: 0px;
+    margin-top: 13px;
+    height: 54px;
+    width: 612px;
+    position: sticky;
+    bottom: 0%;
+    flex-direction: row;
+    justify-content: space-around;
+  } /* fim da @media para mobile*/
+}
