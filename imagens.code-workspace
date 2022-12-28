@@ -1,0 +1,29 @@
+{
+	"folders": [
+		{
+			"name": "imagens",
+			"path": "../imagens"
+		},
+		{
+			"name": "vectors",
+			"path": "../vectors"
+		},
+		{
+			"name": "video",
+			"path": "../video"
+		},
+		{
+			"name": ".codesandbox",
+			"path": "../.codesandbox"
+		},
+		{
+			"name": "Projeto_Instagram_final",
+			"path": "."
+		},
+		{
+			"name": ".git",
+			"path": "../.git"
+		}
+	],
+	"settings": {}
+}
