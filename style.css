@@ -245,7 +245,7 @@ ion-icon {
   flex-direction: column;
   justify-content: start;
   align-items: center;
-  background-image: url("imagens/stories_background 1.png");
+  background-image: url("./img/stories_background 1.png");
   background-position: center;
   -webkit-transition: -webkit-transform 0.3s ease;
   transition: transform 0.3s ease;
